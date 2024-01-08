@@ -1,9 +1,43 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:'idroid' ;
+    src: url('../fontes/idroid.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
-    background-color: #c5ebd6;
+    background-color: var(--cor1);
 }
 
 :root{
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+
+    --font-titulo: 'idroid', Helvetica, sans-serif;
+}
+
+header{
+    background-color: var(--cor5);
+    height: 200px;
     
+}
+
+header h1{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-family: var(--font-titulo);
+}
+
+header p{
+    color: white;
+    text-align: justify;
+    
+
 }
