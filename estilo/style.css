@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 @font-face {
     font-family:'idroid' ;
     src: url('../fontes/idroid.otf') format("opentype");
@@ -7,9 +10,6 @@
     font-style: normal;
 }
 
-body{
-    background-color: var(--cor1);
-}
 
 :root{
     --cor1: #c5ebd6;
@@ -19,25 +19,55 @@ body{
     --cor5: #1a5c37;
     --cor6: #063d1e;
 
-    --font-titulo: 'idroid', Helvetica, sans-serif;
+    --font-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --font-android: 'idroid', Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', sans-serif;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+    font-family: var(--font-padrão);
 }
 
 header{
-    background-color: var(--cor5);
-    height: 200px;
+    background-color: var(--cor4);
     
 }
 
-header h1{
+header > h1{
     text-align: center;
     padding: 30px;
     color: white;
-    font-family: var(--font-titulo);
+    font-family:var(--font-destaque);
 }
 
 header p{
     color: white;
     text-align: justify;
-    
+    font-family: var(--font-destaque);
+}
 
+nav{
+    background-color: var(--cor5);
+    
+}
+
+nav >a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
 }
